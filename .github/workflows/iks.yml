@@ -20,3 +20,5 @@ jobs:
         run: |
           echo "$VCAP_LOCAL" >> ./vcap-local.json
           cat vcap-local.json
+          echo "$VCAP_LOCAL"
+          echo $VCAP_LOCAL
