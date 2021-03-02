@@ -14,7 +14,9 @@ jobs:
     name: A job to download and log into ibmcloud cli
     steps:
       - uses: actions/checkout@v2
+        env:
+          VCAP_LOCAL: ${{ secrets.VCAP_LOCAL }}      
       - name: Set environment variables
         run: |
-          echo ${{ secrets.VCAP_LOCAL }} >> ./vcap-local.json
+          echo "$SUPER_SECRET" >> ./vcap-local.json
           cat vcap-local.json
