@@ -18,5 +18,5 @@ jobs:
           VCAP_LOCAL: ${{ secrets.VCAP_LOCAL }}      
       - name: Set environment variables
         run: |
-          echo "$SUPER_SECRET" >> ./vcap-local.json
+          echo "$VCAP_LOCAL" >> ./vcap-local.json
           cat vcap-local.json
