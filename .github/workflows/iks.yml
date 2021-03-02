@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to download and log into ibmcloud cli
     steps:
-      - uses: actions/checkout@v2    
+      - uses: actions/checkout@v2 
+      
       - name: Set environment variables
-      - shell: bash      
         env:
           VCAP_LOCAL: ${{ secrets.VCAP_LOCAL }}      
         run: |
