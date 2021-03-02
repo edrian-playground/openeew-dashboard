@@ -20,6 +20,6 @@ jobs:
           VCAP_LOCAL: ${{ secrets.VCAP_LOCAL }}      
         run: |
           echo "$VCAP_LOCAL" >> ./vcap-local.json
-          cat vcap-local.json
+          cat ./vcap-local.json
           echo "$VCAP_LOCAL"
           echo $VCAP_LOCAL
