@@ -37,3 +37,4 @@ jobs:
           k8s-cluster-name: ${{ secrets.K8S_CLUSTER_NAME }}
           k8s-cluster-namespace: ${{ secrets.K8S_CLUSTER_NAMESPACE }}
           registry-hostname: us.icr.io
+          working-directory: "web/"
